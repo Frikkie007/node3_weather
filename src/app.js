@@ -9,6 +9,8 @@ const viewsPath = path.join(__dirname, '../src/templates/views')
 const partialsPath = path.join(__dirname, '../src/templates/partials')
 
 const app = express() 
+const port = process.env.PORT || 3000
+
 const publicdir = path.join(__dirname, '../public')
 
 //setting for express
@@ -98,7 +100,7 @@ app.get('*', (req,res)=>
 })
 
 
-app.listen(3000, ()=>
+app.listen(port, ()=>
 {
     console.log('running')
 }) // starts up express web service on port 3000 and an optional function when server is up, keeps running untill ctrl + c

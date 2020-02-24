@@ -49,14 +49,16 @@ header a
     width: 250px;
 }
 
-.input
-{
-    border:1px solid #cccccc;
+
+input {
+    border: 1px solid #cccff9;
     padding: 8px;
 }
 
-.button
-{
+button {
     cursor: pointer;
-    border: 1px solid #888888
+    border: 1px solid #888f88;
+    background: #888ff8;
+    color: #fffff9;
+    padding: 8px;
 }
